@@ -1,0 +1,92 @@
+body {
+    background-color: var(--body-background-color);
+}
+
+/* Navigation Bar start */
+    .nav-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        display: flex;
+    }
+
+    /* Navigation Bar Logo start */
+        .nav-image-container img {
+            width: 100px;
+        }
+    /* Navigation Bar Logo end */
+
+    /* Navigation Bar Links start */
+        .nav-links-container {
+            margin-left: 30%;
+            height: 100px;
+            line-height: 100px;
+        }
+        .nav-links-container ul{
+            display: flex;
+        }
+
+        .nav-links-container ul li{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .nav-links-container a {
+            color: var(--text-color-navigation-primary);
+            font-size: var(--font-size-nav);
+            font-weight: var(--font-weight-normal);
+            font-family: 'Exo',sans-serif;
+            text-decoration: none;
+        }
+    /* Navigation Bar Links end */
+
+    /* Navigation Bar Button start */
+        .log-in-link{
+            margin-left: 19%;
+            height: 100px;
+            line-height: 100px;
+        }
+        .log-in-link a{
+            text-decoration: none;
+            color: var(--text-color-navigation-secondary);
+            font-size: var(--font-size-nav);
+            font-weight: var(--font-weight-normal);
+            font-family: 'Exo',sans-serif;
+        }
+    /* Navigation Bar Button end */
+/* Navigation Bar end */
+
+/* Main content start */
+    main {
+        margin-top: 100px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    /* Main Left Side start */
+        .hero-left-text-container h1{
+            color: var(--text-color-header-primary);
+            font-size: var(--font-size-header);
+        }
+        .hero-left-text-container h2{
+            color: var(--text-color-header-primary);
+            font-size: var(--font-size-header);
+        }
+
+        .hero-left-text-container span {
+            color: var(--text-color-header-secondary);
+        }
+
+    /* Main Left Side end */
+    
+    /* Main Right Side start */
+        .hero-right-section img {
+            width: 600px;
+        }
+    /* Main Right Side end */
+/* Main content end */
