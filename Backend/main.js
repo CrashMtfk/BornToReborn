@@ -9,7 +9,7 @@ form.addEventListener('submit', (e) => {
     //console.log(obj);
     const json = JSON.stringify(obj);
     localStorage.setItem('form', json);
-    window.location.href = "BornToReborn/Frontend/profile_page/profile.html";
+    window.location.href = "./profile.html";
     //console.log(localStorage);
     let user = {
         "nume" : document.getElementById("user").value,
