@@ -9,11 +9,13 @@ form.addEventListener('submit', (e) => {
     //console.log(obj);
     const json = JSON.stringify(obj);
     localStorage.setItem('form', json);
-    window.location.href = "./profile.html";
+    window.location.href = "../profile_page/profile.html";
     //console.log(localStorage);
     let user = {
         "nume" : document.getElementById("user").value,
-        "email" : document.getElementById("email").value
+        "user" : document.getElementById("user").value,
+        "email" : document.getElementById("email").value,
+        "country" : document.getElementById("country").value,
     }
     Data.push(user);
     console.log(Data);

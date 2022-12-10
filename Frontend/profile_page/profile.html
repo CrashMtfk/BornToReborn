@@ -17,12 +17,12 @@
                     <img src="../assets/profilePicture.jpg" alt="">
                 </div>
                 <div class="profile-data-info">
-                    <p class="name">Full Name</p>
-                    <p class="country-text">Country</p>
+                    <p id="name" class="name">Name</p>
+                    <p id="country" class="country-text"></p>
                     <div class="age-sex-container">
-                        <p class="age">Age</p>
+                        <p id="age" class="age">Age</p>
                         <p class="divider">/</p>
-                        <p class="sex">Sex</p>
+                        <p id="sex" class="sex">Sex</p>
                     </div>
                     <p class="points">Points</p>
                 </div>
@@ -179,10 +179,24 @@
                         <div class="claim-button">
                             <button>Claim</button>
                         </div>
+                        <div class="claim-button">
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 </body>
+<script>
+    const json = localStorage.getItem('form');
+    const obj = JSON.parse(json);
+    const arr = new Array();
+    for(key in obj){
+        arr.push(obj[key]);
+    }
+    document.getElementById("name").innerHTML = arr[0];
+    document.getElementById("country").innerHTML = arr[4];
+    document.getElementById("age").innerHTML = arr[5];
+    document.getElementById("sex").innerHTML = arr[6];
+</script>
 </html>
