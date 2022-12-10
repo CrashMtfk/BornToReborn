@@ -16,17 +16,17 @@
             <h1>Sign Up</h1>
         </div>
         <div class="form-container">
-            <form action="">
+            <form id="sign-up-form">
                 <div class="inputs-container">
                     <div class="left-profile-info">
-                        <input type="text" placeholder="Full name"> <br>
-                        <input type="text" placeholder="Username"> <br>
-                        <input type="email" name="" id="" placeholder="E-mail"><br>
-                        <input type="password" name="" id="" placeholder="Password">
+                        <input type="text" name="name" id= "name" placeholder="Full name"> <br>
+                        <input type="text" name="user" id="user" placeholder="Username"> <br>
+                        <input type="email" name="email" id="email" placeholder="E-mail"><br>
+                        <input type="password" name="password" id="password" placeholder="Password">
                     </div>
                     <div class="right-profile-info">
-                        <input type="text" placeholder="Country"><br>
-                        <input type="text" placeholder="Age"><br>
+                        <input type="text" name="country" id="country" placeholder="Country"><br>
+                        <input type="text" name="age" id="age" placeholder="Age"><br>
                         <div class="radio-inputs-container">
                             <div class="male-input-container">
                                 <label for="m-sex">M</label>
@@ -40,7 +40,8 @@
                     </div>
                 </div>
                 <div class="button-container">
-                    <button>Get Started</button>
+                    <button type="submit">Get Started</button>
+                    <!--<button onclick="sendJSON()">Get Started</button>-->
                 </div>
             </form>
         </div>
@@ -49,5 +50,8 @@
             <a href="../index.html">Home</a>
         </div>
     </div>
+    <script src="/Backend/main.js">
+      </script>
+    
 </body>
 </html>
