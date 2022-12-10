@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thyleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,12 +17,12 @@
             <img src="../assets/Logo.png" alt="Image of Born to Reborn logo">
         </div>
         <div class="form-container">
-            <form method="post" action="/login" th:object="${loginRequest}">
+            <form action="">
                 <div class="form-item">
-                    <input type="text" name="username" placeholder="Username">
+                    <input type="text" placeholder="Username">
                 </div>
                 <div class="form-item">
-                    <input type="password" name="password" id="" placeholder="Password">
+                    <input type="password" name="" id="" placeholder="Password">
                 </div>
 
                 <button type="submit">Log in</button>
@@ -30,8 +30,8 @@
         </div>
         <div class="footer-container">
             <footer>
-                <p>Don't have an account? <a href="/register">Sign Up</a></p>
-                    <a href="/index" class="home-link">Home</a>
+                <p>Don't have an account? <a href="../sign_up_page/signup.html">Sign Up</a></p>
+                <a href="../index.html" class="home-link">Home</a>
             </footer>
         </div>
     </div>
