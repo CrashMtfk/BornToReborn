@@ -68,8 +68,20 @@ body {
     /* Form end */
 
     /* Footer start */
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
         footer p{
             color: var(--text-color-footer);
+        }
+        footer .home-link {
+            text-decoration: none;
+            color: var(--link-text-color);
         }
 
         footer p a {
