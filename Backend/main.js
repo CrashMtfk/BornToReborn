@@ -16,6 +16,8 @@ form.addEventListener('submit', (e) => {
         "user" : document.getElementById("user").value,
         "email" : document.getElementById("email").value,
         "country" : document.getElementById("country").value,
+        "sex-m": document.getElementById("m-sex").value,
+        "sex-f": document.getElementById("f-sex").value,
     }
     Data.push(user);
     console.log(Data);
