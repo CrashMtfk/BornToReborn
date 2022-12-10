@@ -22,6 +22,7 @@ public class UserController {
     @GetMapping("/register")
     public String getRegisterPage(Model model){
         model.addAttribute("registerRequest",new UsersModel());
+<<<<<<< Updated upstream
         return "register_page";
     }
 
@@ -35,13 +36,26 @@ public class UserController {
     public String getIndex(Model model){
         model.addAttribute("indexRequest",new UsersModel());
         return "index_page";
+=======
+        return "../Frontend/sign_up_page/signup";
+    }
+
+    @GetMapping("/login")
+    public String getLoginPage(Model model) {
+        model.addAttribute("loginRequest", new UsersModel());
+        return "../Frontend/log_in_page/login";
+>>>>>>> Stashed changes
     }
 
     @PostMapping("/register")
     public String register(@ModelAttribute UsersModel usersModel) {
         System.out.println("Register request: " + usersModel);
         UsersModel registeredUser = userService.registerUser(usersModel.getFullName(),usersModel.getUsername(),usersModel.getEmail(),usersModel.getPassword(),usersModel.getCountry(),usersModel.getAge(),usersModel.getGender());
+<<<<<<< Updated upstream
         return registeredUser == null ? "register_page" : "login_page";
+=======
+        return registeredUser == null ? "../Frontend/sign_up_page/signup" : "../Frontend/log_in_page/login";
+>>>>>>> Stashed changes
     }
 
     @PostMapping("/login")
@@ -53,7 +67,11 @@ public class UserController {
             return "profile_page";
         }
         else {
+<<<<<<< Updated upstream
             return "login_page";
+=======
+            return "../Frontend/log_in_page/login";
+>>>>>>> Stashed changes
         }
     }
 }
