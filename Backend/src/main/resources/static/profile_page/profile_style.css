@@ -54,11 +54,40 @@ body {
 
 /* Achievement container start */
     .achievements-container {
+        margin-top: 50px;
+        border-radius: 8px;
         background-color: var(--button-background-color);
+    }
+
+    .achievements-container .title-container{
+        width: 80%; 
+        margin: auto;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 30px;
+        color: var(--text-color-header-secondary);
+        font-family: 'Exo',sans-serif;
+        font-weight: var(--font-weight-bold);
+    }
+
+    .achievements-list {
+        width: 90%;
+        margin: auto;
+        padding-bottom: 20px;
     }
 
     .achievements-list ul li {
         display: flex;
+        margin-top: 15px; 
+        height: 40px;
+        line-height: 40px;
+        font-family: 'Oswald',sans-serif;
+    }
+
+    .achievement-title {
+        width: 80%;
+        text-align: center;
+        color: var(--text-color-header-primary);
     }
 /* Achievement container end */
 
@@ -98,8 +127,37 @@ body {
 /* Code insert container end */
 
 /* Voucher contianer start */
+
     .voucher-container ul li {
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 30px;
+        width: 90%;
+        height: 100px;
+        background-color: var(--button-background-color);
+    }
+
+    .offer-title{
+        font-size: var(--font-size-nav);
+        color: var(--text-color-header-primary);
+    }
+    .offer-description{
+        font-size: var(--font-size-small);
+        color: var(--text-color-footer);
+    }
+
+    .points-needed {
+        color: var(--text-color-footer);
+    }
+
+    .claim-button button {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: var(--text-color-header-secondary);
+        border: none;
+        color: var(--text-color-header-primary);
     }
 
     .points-needed {
