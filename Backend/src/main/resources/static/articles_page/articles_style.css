@@ -90,6 +90,7 @@ body {
         background-color: var(--button-background-color);
         border: none;
         border-radius: 25px 0px 0px 25px;
+        text-align: center;
     }
 
     .input-code-container input:focus{
@@ -101,7 +102,8 @@ body {
         height: 50px;
         background-color: var(--button-background-color);
         border: none;
-
+        color: var(--text-color-header-primary);
+        font-weight: var(--font-weight-bold);
         border-radius: 0px 25px 25px 0px;
     }
 
@@ -128,10 +130,13 @@ body {
     .article-title h2{
         font-size: var(--font-size-text-buttons);
         margin: 10px;
+        color: var(--text-color-header-primary);
+        font-weight: var(--font-weight-bold);
     }
 
     .article-description p{
         font-size: 12px;
         margin: 10px;
+        color: var(--text-color-footer);
     }
 /* Articles end */
