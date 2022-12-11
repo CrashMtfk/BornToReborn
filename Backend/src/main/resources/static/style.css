@@ -46,6 +46,12 @@ body {
             font-weight: var(--font-weight-normal);
             font-family: 'Exo',sans-serif;
             text-decoration: none;
+            transition: color .3s ease-in-out, font-size .3s ease-in-out;
+        }
+
+        .nav-links-container a:hover{
+            color: var(--button-background-color);
+            font-size: 30px;
         }
     /* Navigation Bar Links end */
 
@@ -61,6 +67,12 @@ body {
             font-size: var(--font-size-nav);
             font-weight: var(--font-weight-normal);
             font-family: 'Exo',sans-serif;
+            border-bottom: 2px solid var(--button-background-color);
+            transition: background 0.4s ease-in-out;
+        }
+        
+        .log-in-link a:hover{
+            background: var(--button-background-color);
         }
     /* Navigation Bar Button end */
 /* Navigation Bar end */
@@ -104,6 +116,12 @@ body {
             background-color: var(--button-background-color);
             border-radius: 50px;
             filter: drop-shadow(-5px 5px 4px rgba(0, 0, 0, 0.25));
+            box-shadow: inset 0 0 0 0 var(--text-color-header-secondary);
+            transition: box-shadow .5s ease-in-out;
+        }
+
+        .hero-left-link-container:hover {
+            box-shadow: inset 200px 0 0 0 var(--text-color-header-secondary)    ;
         }
 
         .hero-left-link-container a{
@@ -113,8 +131,12 @@ body {
             font-size: var(--font-size-header-button);
             font-family: 'Exo',sans-serif;
             font-weight: var(--font-weight-bold);
-
+            transition: color .3s ease-in-out;
             
+        }
+
+        .hero-left-link-container a:hover {
+            color: var(--text-color-header-primary);
         }
 
     /* Main Left Side end */

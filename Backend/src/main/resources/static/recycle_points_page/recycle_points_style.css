@@ -39,6 +39,12 @@ body {
         font-weight: var(--font-weight-normal);
         font-family: 'Exo',sans-serif;
         text-decoration: none;
+        transition: color .3s ease-in-out, font-size .3s ease-in-out;
+    }
+
+    .nav-links-container a:hover{
+        color: var(--button-background-color);
+        font-size: 30px;
     }
 /* Navigation Bar Links end */
 
@@ -54,6 +60,12 @@ body {
         font-size: var(--font-size-nav);
         font-weight: var(--font-weight-normal);
         font-family: 'Exo',sans-serif;
+        border-bottom: 2px solid var(--button-background-color);
+        transition: background 0.4s ease-in-out;
+    }
+    
+    .log-in-link a:hover{
+        background: var(--button-background-color);
     }
 /* Navigation Bar Button end */
 /* Navigation Bar end */
