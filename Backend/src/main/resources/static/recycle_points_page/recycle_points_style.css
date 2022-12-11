@@ -1,0 +1,99 @@
+body {
+    background-color: var(--body-background-color);
+}
+/* Navigation Bar start */
+.nav-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+
+    display: flex;
+    
+}
+
+/* Navigation Bar Logo start */
+    .nav-image-container img {
+        width: 100px;
+    }
+/* Navigation Bar Logo end */
+
+/* Navigation Bar Links start */
+    .nav-links-container {
+        margin-left: auto;
+        height: 100px;
+        line-height: 100px;
+    }
+    .nav-links-container ul{
+        display: flex;
+    }
+
+    .nav-links-container ul li{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .nav-links-container a {
+        color: var(--text-color-navigation-primary);
+        font-size: var(--font-size-nav);
+        font-weight: var(--font-weight-normal);
+        font-family: 'Exo',sans-serif;
+        text-decoration: none;
+    }
+/* Navigation Bar Links end */
+
+/* Navigation Bar Button start */
+    .log-in-link{
+        margin-left: auto;
+        height: 100px;
+        line-height: 100px;
+    }
+    .log-in-link a{
+        text-decoration: none;
+        color: var(--text-color-navigation-secondary);
+        font-size: var(--font-size-nav);
+        font-weight: var(--font-weight-normal);
+        font-family: 'Exo',sans-serif;
+    }
+/* Navigation Bar Button end */
+/* Navigation Bar end */
+
+/* Main content start */
+    .middle-content-container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4%;
+        display: flex;
+    }
+
+    .left-side-container{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    .right-side-container{
+        width: 45%;
+    }
+    .locations-title-container h2{
+        margin-bottom: 50px;
+
+        font-size: var(--font-size-title);
+        color: var(--text-color-header-secondary);
+        text-align: center;
+        font-weight: var(--font-weight-bold);
+    }
+
+    .location-list-container ul{
+        list-style: circle;
+    }
+
+    .location-list-container li{
+        color: var(--text-color-navigation-primary);
+        margin-bottom: 15px;
+    }
+/* Main content end */

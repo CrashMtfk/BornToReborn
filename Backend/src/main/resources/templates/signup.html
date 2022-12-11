@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymealeaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/global_styling/css_reset.css">
+    <link rel="stylesheet" href="../static/global_styling/styling_variables.css">
+    <link rel="stylesheet" href="../static/sign_up_page/signup_style.css">
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="title-container">
+            <h1>Sign Up</h1>
+        </div>
+        <div class="form-container">
+            <form method="post" id="sign-up-form" action="/signup" th:object="${signupRequest}">
+                <div class="inputs-container">
+                    <div class="left-profile-info">
+                        <input type="text" name="fullName" id= "name" placeholder="Full name"> <br>
+                        <input type="text" name="username" id="user" placeholder="Username"> <br>
+                        <input type="email" name="email" id="email" placeholder="E-mail"><br>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                    </div>
+                    <div class="right-profile-info">
+                        <input type="text" name="country" id="country" placeholder="Country"><br>
+                        <input type="text" name="age" id="age" placeholder="Age"><br>
+                        <div class="radio-inputs-container">
+                            <div class="male-input-container">
+                                <label for="m-sex">M</label>
+                                <input type="radio" name="sex" id="m-sex">
+                            </div>
+                            <div class="female-input-container">
+                                <label for="f-sex">F</label>
+                                <input type="radio" name="sex" id="f-sex">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Get Started</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer-container">
+            <p>Already have an account? <a href="login.html">Log In</a></p>
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+    <script src="/Backend/main.js">
+      </script>
+    
+</body>
+</html>

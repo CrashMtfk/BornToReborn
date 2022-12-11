@@ -1,0 +1,108 @@
+body {
+    background-color: var(--body-background-color);
+}
+
+.main-container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+
+    display: flex;
+}
+
+.left-side-container {
+    width: 30%;
+}
+
+.right-side-container {
+    width: 65%;
+}
+
+
+/* Profile data start */
+.profile-data-container{
+    background-color: var(--button-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Exo',sans-serif;
+    color: var(--text-color-header-primary);
+    border-radius: 8px;
+}
+
+.profile-image-container {
+    margin-top: 3%;
+}
+
+.name {
+    font-weight: var(--font-weight-bold);
+}
+
+
+.profile-image-container img {
+    width: 200px;
+    border-radius: 100px;
+}
+.age-sex-container {
+    display: flex;
+}
+
+/* Profile data end */
+
+/* Achievement container start */
+    .achievements-container {
+        background-color: var(--button-background-color);
+    }
+
+    .achievements-list ul li {
+        display: flex;
+    }
+/* Achievement container end */
+
+
+/* Code insert container start */
+    .code-insert-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .code-insert-container form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-code-container input {
+        width: 450px;
+        height: 50px;
+        background-color: var(--button-background-color);
+        border: none;
+        border-radius: 25px 0px 0px 25px;
+    }
+
+    .input-code-container input:focus{
+        outline: none;
+    }
+
+    .button-add-container button {
+        width: 150px;
+        height: 50px;
+        background-color: var(--button-background-color);
+        border: none;
+
+        border-radius: 0px 25px 25px 0px;
+    }
+/* Code insert container end */
+
+/* Voucher contianer start */
+    .voucher-container ul li {
+        display: flex;
+    }
+
+    .points-needed {
+        display: flex;
+    }
+/* Voucher container end */
