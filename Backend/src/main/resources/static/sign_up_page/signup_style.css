@@ -1,0 +1,158 @@
+body{
+    background-color: var(--body-background-color);
+}
+
+/* Main container start */
+    .main-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    /* Title container start */
+        .title-container {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .title-container h1{
+            color: var(--text-color-header-secondary);
+            font-family: 'Exo',sans-serif;
+            font-size: var(--font-size-title);
+            font-weight: var(--font-weight-bold);
+        }
+    /* Title container end */
+
+    /* Form container start */
+        .form-container {
+            margin-top: 50px;
+        }
+
+        .form-container form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Form container inputs start */
+            .inputs-container {
+                display: flex;
+                justify-content: center;
+            }
+
+            .inputs-container input {
+                width: 250px;
+                height: 50px;
+                margin-bottom: 30px;
+
+                border-radius: 8px;
+                background-color: var(--text-color-footer);
+                color: var(--text-color-forms);
+                font-family: 'Oswald',sans-serif;
+            }
+
+            .inputs-container input::placeholder{
+                color: var(--text-color-forms);
+            }
+
+            .left-profile-info {
+                margin-right: 20px;
+            }
+
+            .right-profile-info{
+                margin-left: 20px;
+            }
+
+            .radio-inputs-container{
+                display: flex;
+            }
+
+            .male-input-container {
+                width: 50%;
+                height: 50px;
+                line-height: 50px;
+                display: flex;
+                justify-content: center;
+
+                color: var(--text-color-footer);
+                font-family: 'Oswald',sans-serif;
+            }
+
+            .female-input-container {
+                width: 50%;
+                height: 50px;
+                line-height: 50px;
+                margin-left: auto;
+                display: flex;
+                justify-content: center;
+
+                color: var(--text-color-footer);
+                font-family: 'Oswald',sans-serif;
+            }
+
+            .radio-inputs-container input {
+                width: 50px;
+            }
+
+            .inputs-container input:focus{
+                outline: none;
+            }   
+
+        /* Form container inputs end */
+        
+        /* Form container button start */
+            .button-container {
+                margin-top: 20px;
+            }
+            .button-container button{
+                width: 250px;
+                height: 50px;
+
+                border-radius: 25px;
+                border: none;
+                font-family: 'Exo',sans-serif;
+                font-size: var(--font-size-text-buttons);
+                font-weight: var(--font-weight-normal);
+                color: var(--text-color-buttons);
+                background-color: var(--button-background-color);
+            }
+        /* Form container button end */
+    /* Form container end */
+
+    /* Footer container start */
+        .footer-container {
+            margin-top: 10px;
+            margin-bottom: 50px;
+            text-align: center;
+            color: var(--text-color-footer);
+            font-family: 'Exo', sans-serif;
+        }        
+
+        .footer-container p a {
+            text-decoration: none;
+            color: var(--link-text-color);
+            font-family: 'Exo', sans-serif;
+        }
+
+        .footer-container a {
+            text-decoration: none;
+            color: var(--link-text-color);
+            font-family: 'Exo', sans-serif;
+        }
+    /* Footer container end */
+/* Main container end */
+
+@media screen and (max-width:700px){
+    .inputs-container {
+        flex-direction: column;
+    }
+    .left-profile-info{
+        margin-right: 0px;
+    }
+    .right-profile-info {
+        margin-left: 0px;
+    }
+}
